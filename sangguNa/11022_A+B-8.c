@@ -25,8 +25,6 @@ int main(void)
     {
         if((a[i] > 0 && a[i] < 10) && (b[i] > 0 && b[i] < 10))
             printf("Case #%d: %d + %d = %d\n", i + 1, a[i], b[i], a[i] + b[i]);
-        else
-            printf("fail to meet the conditions.\n");
     }
     return (0);
 }
