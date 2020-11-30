@@ -1,0 +1,56 @@
+알고리즘 진행 모습
+10 30 10 20 10 10, n = 6
+
+i = 1
+j = 0
+max = 0
+arr[1] = 10 arr[0] = ?? X 
+d[i = 1] = 1
+
+i = 2
+j = 0
+arr[2] = 30 arr0 = ?? X
+arr2 = 30 arr1 = 10 x
+d[2] = 1 
+
+i = 3
+j = 0
+arr3 = 10 arr0 = ?? X
+arr3 = 10 arr1 = 10 X
+arr3 = 10 arr2 = 30 -> d[2] > max = 0 -> max = d[2] = 1
+d[3] = 2
+
+i = 4
+j = 0
+arr4 = 20 arr1 = ?? X
+arr4 = 20 arr1 = 10 X
+arr4 = 20 arr2 = 30 -> d[2] > max=0 -> max = d[2] = 1
+arr4 = 20 arr3 = 10 X
+d[4] = 2
+
+i = 5
+j = 0
+arr5 = 10 arr0 = ?? X
+arr5 = 10 arr1 = 10 X
+arr5 = 10 arr2 = 30 -> d[1] >0 -> max = d[1] = 1
+arr5 = 10 arr3 = 10 X
+arr5 = 10 arr4 = 20 -> d[3] > 1 -> max = d[3] = 2
+d[5] = 3
+
+i = 6
+j = 0
+arr6 = 10 arr0 = ?? X
+arr6 = 10 arr1 = 10 X
+arr6 = 10 arr2 = 30 -> d[1] >0 -> max = d[1] = 1
+arr6 = 10 arr3 = 10 X
+arr6 = 10 arr4 = 20 -> d[3] > 1 -> max = d[3] = 2
+arr6 = 10 arr5 = 10 X
+d[6] = 3
+
+max = 0
+0 < d[1]  = 1 -> max = 1
+1 < d[2] = 1 X
+1 < d[3] = 2 -> max = 2
+2 < d[4] = 2 X
+2 < d[5] = 3 -> max = 3
+3 < d[6] = 3 X
