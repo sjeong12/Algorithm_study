@@ -15,8 +15,6 @@ int main(void)
 
         if((a > 0 && a < 10) && (b > 0 && b < 10)) //0 < a, b < 10이면 덧셈을 수행함
             printf("Case #%d: %d\n", i + 1, a + b); //Case # 을 출력
-        else //그게 아니라면 조건에 충족하지 않는다고 오류문을 출력함.
-            printf("not enought condition\n");
     }
 
     return(0);
