@@ -21,7 +21,7 @@ int main(void)
         {
             if(arr[i] < arr[j]) //만약 뒤(i)의 인덱스보다 앞(i보다 작은)의 인덱스의 크기가 크면
             {
-                if(dp[j] > max) //그리고 dp[j]의 값이 max보다 작으면
+                if(dp[j] > max) //그리고 dp[j]의 값이 max보다 크면
                     max = dp[j]; //max가 저장되어있는 dp[j]의 값을 max에 저장
             }
         }
