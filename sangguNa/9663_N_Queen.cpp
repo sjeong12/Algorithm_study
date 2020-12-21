@@ -2,7 +2,7 @@
 #include <math.h>
 #define MAX 15
 //백트래킹, 브루트포스 문제
-int col[MAX]; //최대 열 갯수
+int col[MAX]; //최대 열 갯수, col[a] = b 뜻은 a번째 열 중 b행에 퀸이 위치해있다는 뜻(b, a)
 int n = 0; //입력받는 열 갯수
 int count = 0; //n-queen 답 갯수
 
