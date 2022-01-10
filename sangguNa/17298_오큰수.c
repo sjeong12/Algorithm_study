@@ -45,14 +45,14 @@ int main(void)
 	for (int i = 0; i < N; i++)
 	{
 		scanf("%d", &arr[i]);
-		ans[i] = -1;
+		ans[i] = -1;//같이 초기화
 	}
 
 	for (int i = 0; i < N; i++)
 	{
 		while (!isEmpty(&s) && arr[top(&s)] < arr[i])
 			ans[pop(&s)] = arr[i];
-		push(&s, i);
+		push(&s, i);//스택에는 인덱스를 저장하게 됨
 	}
 
 	for (int i = 0; i < N; i++)
