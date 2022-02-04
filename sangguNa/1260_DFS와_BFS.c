@@ -56,7 +56,7 @@ void init(int N)
 
 int main(void)
 {
-    int N, M, V;
+    int N, M, V;//정점의 갯수, 간선의 갯수, 시작할 정점 번호
 
     scanf("%d %d %d", &N, &M, &V);
     for (int i = 0; i < M; i++)
