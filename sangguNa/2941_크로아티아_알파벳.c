@@ -7,9 +7,10 @@ int main(void)
     int len, total;
 
     scanf("%s", &arr);
-    len = strlen(arr);
+    len = strlen(arr);//전체 문자열 길이
     total = strlen(arr);
 
+    //크로아티아 알파벳을 발견하면 하나씩 차감함
     for (int i = 0; i < len; i++)
     {
         if (arr[i] == 'c' || arr[i] == 's' || arr[i] == 'z')
