@@ -30,7 +30,7 @@ int main(void)
 	for (int i = 0; i < N; i++)
 	{	for (int j = 0; j < N; j++)
 			cin >> mat[i][j];
-		res[i][i] = 1;
+		res[i][i] = 1;//단위 행렬 생성
 	}
 	
 	while (B)
