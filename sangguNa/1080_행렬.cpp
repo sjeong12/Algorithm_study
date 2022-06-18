@@ -23,7 +23,7 @@ int main(void)
 	int ans = 0;
 
 	cin >> N >> M;
-	for (int i = 0; i < N; i++)
+	for (int i = 0; i < N; i++)//A행렬 입력
 	{
 		for (int j = 0; j < M; j++)
 		{
@@ -31,24 +31,24 @@ int main(void)
 			A[i][j] = c - 48;
 		}
 	}
-	for (int i = 0; i < N; i++)
+	for (int i = 0; i < N; i++)//B행렬 입력
 	{
 		for (int j = 0; j < M; j++)
 		{
 			cin >> c;
 			B[i][j] = c - 48;
-			if (B[i][j] != A[i][j])
+			if (B[i][j] != A[i][j])//다른 부분이 있으면 true로 체크
 				trans[i][j] = true;
 		}
 	}
 
-	if (N < 3 || M < 3)
+	if (N < 3 || M < 3)//3,3 행렬보다 작으면 3x3으로 바꾸는 시도를 못하므로
 	{
 		for (int i = 0; i < N; i++)
 		{
 			for (int j = 0; j < M; j++)
 			{
-				if (trans[i][j])
+				if (trans[i][j])//처음부터 같지않으면 -1 출력
 				{
 					ans = -1;
 					break;
@@ -64,7 +64,7 @@ int main(void)
 			{
 				if (trans[i][j] == true)
 				{
-					change(i, j);
+					change(i, j);//3x3 범위 뒤집기
 					ans++;
 				}
 			}
